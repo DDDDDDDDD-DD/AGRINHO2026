@@ -1,1 +1,882 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+        content="Agro Sustentável: informações sobre sustentabilidade, tecnologia, biodiversidade, água, solo e energia renovável no agronegócio.">
+
+    <title>Agro Sustentável</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- MENU -->
+    <header class="header">
+
+        <a href="#inicio" class="logo">
+            🌱 Agro<span>Sustentável</span>
+        </a>
+
+        <button class="menu-btn" id="menuBtn">
+            ☰
+        </button>
+
+        <nav id="menu">
+            <a href="#inicio">Início</a>
+            <a href="#sobre">Sobre</a>
+            <a href="#temas">Temas</a>
+            <a href="#tecnologia">Tecnologia</a>
+            <a href="#calculadora">Calculadora</a>
+            <a href="#glossario">Glossário</a>
+            <a href="#fontes">Fontes</a>
+        </nav>
+
+    </header>
+
+
+    <!-- HERO -->
+    <main>
+
+        <section id="inicio" class="hero">
+
+            <div class="hero-overlay"></div>
+
+            <div class="hero-content">
+
+                <p class="mini-title">
+                    AGRONEGÓCIO • SUSTENTABILIDADE • FUTURO
+                </p>
+
+                <h1>
+                    Produzir hoje,
+                    <span>preservar amanhã.</span>
+                </h1>
+
+                <p class="hero-text">
+                    Descubra como o agronegócio pode crescer utilizando
+                    tecnologia, planejamento e práticas que respeitam
+                    o meio ambiente.
+                </p>
+
+                <div class="hero-buttons">
+
+                    <a href="#sobre" class="btn principal">
+                        Conhecer o projeto
+                    </a>
+
+                    <a href="#calculadora" class="btn secundario">
+                        Usar calculadora
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- SOBRE -->
+        <section id="sobre" class="section sobre">
+
+            <div class="section-heading">
+
+                <span>01 / SOBRE</span>
+
+                <h2>
+                    O que significa
+                    <strong>Agro Sustentável?</strong>
+                </h2>
+
+            </div>
+
+            <div class="sobre-grid">
+
+                <div class="sobre-texto">
+
+                    <p>
+                        O agronegócio é formado por diversas atividades
+                        relacionadas à produção agropecuária, desde os
+                        insumos utilizados no campo até o processamento,
+                        transporte e comercialização dos produtos.
+                    </p>
+
+                    <p>
+                        Quando falamos em agronegócio sustentável,
+                        buscamos encontrar um equilíbrio entre
+                        <strong>produção, economia, sociedade e meio ambiente.</strong>
+                    </p>
+
+                    <p>
+                        Isso significa produzir alimentos e matérias-primas
+                        sem comprometer os recursos necessários para as
+                        próximas gerações.
+                    </p>
+
+                    <div class="frase-destaque">
+                        <span>🌎</span>
+
+                        <p>
+                            Sustentabilidade não significa parar de produzir.
+                            Significa aprender a produzir de maneira mais
+                            inteligente e responsável.
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <div class="sobre-numeros">
+
+                    <div>
+                        <strong>01</strong>
+                        <h3>Produção</h3>
+                        <p>Mais eficiência no campo.</p>
+                    </div>
+
+                    <div>
+                        <strong>02</strong>
+                        <h3>Preservação</h3>
+                        <p>Proteção dos recursos naturais.</p>
+                    </div>
+
+                    <div>
+                        <strong>03</strong>
+                        <h3>Tecnologia</h3>
+                        <p>Dados para decisões melhores.</p>
+                    </div>
+
+                    <div>
+                        <strong>04</strong>
+                        <h3>Futuro</h3>
+                        <p>Produção para as próximas gerações.</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- TEMAS -->
+        <section id="temas" class="section temas">
+
+            <div class="section-heading centralizado">
+
+                <span>02 / PRINCIPAIS TEMAS</span>
+
+                <h2>
+                    Conheça os pilares do
+                    <strong>Agro Sustentável</strong>
+                </h2>
+
+                <p>
+                    Clique nos cartões para descobrir mais sobre cada assunto.
+                </p>
+
+            </div>
+
+
+            <div class="cards">
+
+
+                <!-- CARD 1 -->
+
+                <article class="card">
+
+                    <img src="assets/agro-sustentavel.jpeg"
+                        alt="Agricultura sustentável">
+
+                    <div class="card-content">
+
+                        <span>01</span>
+
+                        <h3>
+                            Agricultura Sustentável
+                        </h3>
+
+                        <p>
+                            Formas de produzir utilizando os recursos
+                            naturais de maneira responsável.
+                        </p>
+
+                        <button data-topic="agro">
+                            Saiba mais →
+                        </button>
+
+                    </div>
+
+                </article>
+
+
+                <!-- CARD 2 -->
+
+                <article class="card">
+
+                    <img src="assets/uso-consiente-agua.jpeg"
+                        alt="Uso consciente da água">
+
+                    <div class="card-content">
+
+                        <span>02</span>
+
+                        <h3>
+                            Uso Consciente da Água
+                        </h3>
+
+                        <p>
+                            A importância da água e maneiras de diminuir
+                            desperdícios na produção.
+                        </p>
+
+                        <button data-topic="agua">
+                            Saiba mais →
+                        </button>
+
+                    </div>
+
+                </article>
+
+
+                <!-- CARD 3 -->
+
+                <article class="card">
+
+                    <img src="assets/conservaçao-solo.jpeg"
+                        alt="Conservação do solo">
+
+                    <div class="card-content">
+
+                        <span>03</span>
+
+                        <h3>
+                            Conservação do Solo
+                        </h3>
+
+                        <p>
+                            Práticas para diminuir erosões e manter
+                            a qualidade do solo.
+                        </p>
+
+                        <button data-topic="solo">
+                            Saiba mais →
+                        </button>
+
+                    </div>
+
+                </article>
+
+
+                <!-- CARD 4 -->
+
+                <article class="card">
+
+                    <img src="assets/protecao-biodiversidade.jpeg"
+                        alt="Proteção da biodiversidade">
+
+                    <div class="card-content">
+
+                        <span>04</span>
+
+                        <h3>
+                            Proteção da Biodiversidade
+                        </h3>
+
+                        <p>
+                            Como agricultura e conservação da natureza
+                            podem coexistir.
+                        </p>
+
+                        <button data-topic="biodiversidade">
+                            Saiba mais →
+                        </button>
+
+                    </div>
+
+                </article>
+
+
+                <!-- CARD 5 -->
+
+                <article class="card">
+
+                    <img src="assets/energia renovavel danilo.jpeg"
+                        alt="Energia renovável">
+
+                    <div class="card-content">
+
+                        <span>05</span>
+
+                        <h3>
+                            Energia Renovável
+                        </h3>
+
+                        <p>
+                            Fontes de energia que podem reduzir impactos
+                            ambientais no campo.
+                        </p>
+
+                        <button data-topic="energia">
+                            Saiba mais →
+                        </button>
+
+                    </div>
+
+                </article>
+
+
+                <!-- CARD 6 -->
+
+                <article class="card">
+
+                    <img src="assets/tecnologia-agro.jpeg"
+                        alt="Tecnologia no agronegócio">
+
+                    <div class="card-content">
+
+                        <span>06</span>
+
+                        <h3>
+                            Tecnologia no Agro
+                        </h3>
+
+                        <p>
+                            Drones, sensores, GPS e dados transformando
+                            a agricultura.
+                        </p>
+
+                        <button data-topic="tecnologia">
+                            Saiba mais →
+                        </button>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- TECNOLOGIA -->
+        <section id="tecnologia" class="section tecnologia">
+
+            <div class="tecnologia-imagem">
+
+                <img src="assets/tecnologia-agro.jpeg"
+                    alt="Tecnologia aplicada ao agronegócio">
+
+            </div>
+
+            <div class="tecnologia-texto">
+
+                <span>03 / INOVAÇÃO</span>
+
+                <h2>
+                    O campo também
+                    <strong>é digital.</strong>
+                </h2>
+
+                <p>
+                    A tecnologia permite coletar informações sobre
+                    plantações, clima, solo e utilização de recursos.
+                </p>
+
+                <div class="tecnologias">
+
+                    <div>
+                        <b>🛰️ GPS</b>
+                        <span>Mapeamento das áreas.</span>
+                    </div>
+
+                    <div>
+                        <b>🚁 Drones</b>
+                        <span>Monitoramento das plantações.</span>
+                    </div>
+
+                    <div>
+                        <b>💧 Sensores</b>
+                        <span>Controle da umidade do solo.</span>
+                    </div>
+
+                    <div>
+                        <b>📊 Dados</b>
+                        <span>Decisões mais precisas.</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- BENEFÍCIOS -->
+        <section class="section beneficios">
+
+            <div class="section-heading centralizado">
+
+                <span>04 / RESULTADOS</span>
+
+                <h2>
+                    Por que investir em
+                    <strong>sustentabilidade?</strong>
+                </h2>
+
+            </div>
+
+            <div class="beneficios-grid">
+
+                <div class="beneficio">
+                    <span>🌱</span>
+                    <h3>Proteção do solo</h3>
+                    <p>
+                        Mantém a qualidade e a capacidade produtiva.
+                    </p>
+                </div>
+
+                <div class="beneficio">
+                    <span>💧</span>
+                    <h3>Economia de água</h3>
+                    <p>
+                        Reduz desperdícios e melhora a eficiência.
+                    </p>
+                </div>
+
+                <div class="beneficio">
+                    <span>🐝</span>
+                    <h3>Biodiversidade</h3>
+                    <p>
+                        Favorece a conservação dos ecossistemas.
+                    </p>
+                </div>
+
+                <div class="beneficio">
+                    <span>💰</span>
+                    <h3>Economia</h3>
+                    <p>
+                        Melhor utilização dos recursos pode reduzir custos.
+                    </p>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- CALCULADORA -->
+        <section id="calculadora" class="section calculadora">
+
+            <div class="calculadora-intro">
+
+                <span>05 / FERRAMENTA</span>
+
+                <h2>
+                    Calculadora
+                    <strong>Agro Sustentável</strong>
+                </h2>
+
+                <p>
+                    Utilize as ferramentas abaixo para fazer estimativas
+                    relacionadas à produção agrícola e ao uso da água.
+                </p>
+
+            </div>
+
+
+            <div class="calculadora-box">
+
+                <div class="abas">
+
+                    <button class="aba ativa" data-calculo="safra">
+                        Resultado da Safra
+                    </button>
+
+                    <button class="aba" data-calculo="agua">
+                        Economia de Água
+                    </button>
+
+                </div>
+
+
+                <!-- SAFRA -->
+
+                <form id="formSafra">
+
+                    <h3>
+                        💰 Estimativa de resultado da produção
+                    </h3>
+
+                    <label>
+                        Área da propriedade (hectares)
+
+                        <input
+                            type="number"
+                            id="area"
+                            min="0"
+                            step="0.01"
+                            placeholder="Ex.: 50"
+                            required
+                        >
+                    </label>
+
+                    <label>
+                        Produção por hectare
+
+                        <input
+                            type="number"
+                            id="producao"
+                            min="0"
+                            step="0.01"
+                            placeholder="Ex.: 60"
+                            required
+                        >
+                    </label>
+
+                    <label>
+                        Preço por unidade (R$)
+
+                        <input
+                            type="number"
+                            id="preco"
+                            min="0"
+                            step="0.01"
+                            placeholder="Ex.: 100"
+                            required
+                        >
+                    </label>
+
+                    <label>
+                        Custo por hectare (R$)
+
+                        <input
+                            type="number"
+                            id="custo"
+                            min="0"
+                            step="0.01"
+                            placeholder="Ex.: 3000"
+                            required
+                        >
+                    </label>
+
+                    <button class="btn principal" type="submit">
+                        Calcular resultado
+                    </button>
+
+                </form>
+
+
+                <!-- ÁGUA -->
+
+                <form id="formAgua" class="escondido">
+
+                    <h3>
+                        💧 Estimativa de economia de água
+                    </h3>
+
+                    <label>
+                        Consumo atual por dia (litros)
+
+                        <input
+                            type="number"
+                            id="aguaAtual"
+                            min="0"
+                            step="0.01"
+                            placeholder="Ex.: 10000"
+                            required
+                        >
+                    </label>
+
+                    <label>
+                        Redução estimada (%)
+
+                        <input
+                            type="number"
+                            id="reducao"
+                            min="0"
+                            max="100"
+                            step="0.1"
+                            placeholder="Ex.: 20"
+                            required
+                        >
+                    </label>
+
+                    <button class="btn principal" type="submit">
+                        Calcular economia
+                    </button>
+
+                </form>
+
+
+                <div id="resultado" class="resultado">
+                    Preencha os campos acima para visualizar o resultado.
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- CURIOSIDADES -->
+        <section class="section curiosidades">
+
+            <div class="curiosidade-box">
+
+                <div>
+
+                    <span>06 / VOCÊ SABIA?</span>
+
+                    <h2 id="curiosidadeTitulo">
+                        Descubra uma curiosidade.
+                    </h2>
+
+                    <p id="curiosidadeTexto">
+                        Clique no botão para conhecer uma informação
+                        sobre sustentabilidade no agronegócio.
+                    </p>
+
+                </div>
+
+                <button id="novaCuriosidade" class="btn claro">
+                    Nova curiosidade
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- GLOSSÁRIO -->
+        <section id="glossario" class="section glossario">
+
+            <div class="section-heading centralizado">
+
+                <span>07 / GLOSSÁRIO</span>
+
+                <h2>
+                    Termos importantes
+                    <strong>do agro.</strong>
+                </h2>
+
+            </div>
+
+            <div class="termos">
+
+                <button data-termo="agronegocio">
+                    <b>Agronegócio</b>
+                    <span>
+                        Cadeia de atividades relacionadas à agropecuária.
+                    </span>
+                </button>
+
+                <button data-termo="agroecologia">
+                    <b>Agroecologia</b>
+                    <span>
+                        Integração de princípios ecológicos à agricultura.
+                    </span>
+                </button>
+
+                <button data-termo="agrofloresta">
+                    <b>Agrofloresta</b>
+                    <span>
+                        Integração de árvores e produção agrícola.
+                    </span>
+                </button>
+
+                <button data-termo="ilpf">
+                    <b>ILPF</b>
+                    <span>
+                        Integração Lavoura-Pecuária-Floresta.
+                    </span>
+                </button>
+
+                <button data-termo="precisao">
+                    <b>Agricultura de precisão</b>
+                    <span>
+                        Uso de dados e tecnologia no campo.
+                    </span>
+                </button>
+
+                <button data-termo="boaspraticas">
+                    <b>Boas práticas</b>
+                    <span>
+                        Procedimentos que favorecem uma produção responsável.
+                    </span>
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- FONTES -->
+        <section id="fontes" class="section fontes">
+
+            <div class="section-heading">
+
+                <span>08 / REFERÊNCIAS</span>
+
+                <h2>
+                    Fontes
+                    <strong>bibliográficas.</strong>
+                </h2>
+
+                <p>
+                    O conteúdo foi elaborado com apoio de fontes
+                    institucionais e científicas.
+                </p>
+
+            </div>
+
+
+            <div class="fontes-lista">
+
+                <a href="https://www.embrapa.br/"
+                    target="_blank">
+
+                    <strong>EMBRAPA</strong>
+
+                    <div>
+                        <h3>
+                            Empresa Brasileira de Pesquisa Agropecuária
+                        </h3>
+
+                        <p>
+                            Pesquisas e informações sobre agricultura,
+                            sustentabilidade, solos, água e tecnologia.
+                        </p>
+                    </div>
+
+                    <span>↗</span>
+
+                </a>
+
+
+                <a href="https://www.gov.br/agricultura/"
+                    target="_blank">
+
+                    <strong>MAPA</strong>
+
+                    <div>
+                        <h3>
+                            Ministério da Agricultura e Pecuária
+                        </h3>
+
+                        <p>
+                            Informações oficiais sobre agricultura,
+                            pecuária e políticas públicas.
+                        </p>
+                    </div>
+
+                    <span>↗</span>
+
+                </a>
+
+
+                <a href="https://www.ibge.gov.br/"
+                    target="_blank">
+
+                    <strong>IBGE</strong>
+
+                    <div>
+                        <h3>
+                            Instituto Brasileiro de Geografia e Estatística
+                        </h3>
+
+                        <p>
+                            Dados e estatísticas sobre agricultura,
+                            território e meio ambiente.
+                        </p>
+                    </div>
+
+                    <span>↗</span>
+
+                </a>
+
+
+                <a href="https://sdgs.un.org/goals"
+                    target="_blank">
+
+                    <strong>ONU</strong>
+
+                    <div>
+                        <h3>
+                            Objetivos de Desenvolvimento Sustentável
+                        </h3>
+
+                        <p>
+                            Referência internacional para sustentabilidade,
+                            água, energia, produção e conservação.
+                        </p>
+                    </div>
+
+                    <span>↗</span>
+
+                </a>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- RODAPÉ -->
+
+    <footer>
+
+        <div class="footer-logo">
+            🌱 Agro<span>Sustentável</span>
+        </div>
+
+        <p>
+            Produzir melhor. Preservar o futuro.
+        </p>
+
+        <div class="footer-links">
+            <a href="#inicio">Início</a>
+            <a href="#temas">Temas</a>
+            <a href="#calculadora">Calculadora</a>
+            <a href="#fontes">Fontes</a>
+        </div>
+
+        <small>
+            Projeto educativo • Agro Sustentável • 2026
+        </small>
+
+    </footer>
+
+
+    <!-- MODAL -->
+
+    <div id="modal" class="modal">
+
+        <div class="modal-fundo"></div>
+
+        <div class="modal-conteudo">
+
+            <button id="fecharModal" class="fechar">
+                ×
+            </button>
+
+            <span id="modalCategoria"></span>
+
+            <h2 id="modalTitulo"></h2>
+
+            <div id="modalTexto"></div>
+
+        </div>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

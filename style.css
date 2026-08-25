@@ -1,1 +1,1161 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
+:root {
+    --verde: #123d29;
+    --verde-claro: #2f754c;
+    --verde-medio: #5b9561;
+    --lima: #b9d979;
+
+    --fundo: #f5f3e9;
+    --branco: #ffffff;
+    --texto: #17231b;
+    --cinza: #66736a;
+    --linha: #dce5dd;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--texto);
+    line-height: 1.6;
+    background: var(--branco);
+}
+
+img {
+    display: block;
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button,
+input {
+    font: inherit;
+}
+
+
+/* =========================
+   MENU
+========================= */
+
+.header {
+    height: 72px;
+    width: 100%;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    z-index: 50;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 6%;
+
+    color: white;
+
+    background: rgba(10, 38, 24, 0.95);
+
+    backdrop-filter: blur(10px);
+}
+
+.logo {
+    font-size: 1.2rem;
+    font-weight: 900;
+}
+
+.logo span {
+    color: var(--lima);
+}
+
+.header nav {
+    display: flex;
+    gap: 24px;
+
+    font-size: 0.82rem;
+    font-weight: bold;
+}
+
+.header nav a {
+    transition: 0.2s;
+}
+
+.header nav a:hover {
+    color: var(--lima);
+}
+
+.menu-btn {
+    display: none;
+
+    border: none;
+    background: transparent;
+
+    color: white;
+
+    font-size: 1.6rem;
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+    min-height: 100vh;
+
+    position: relative;
+
+    display: flex;
+    align-items: center;
+
+    padding: 130px 8% 80px;
+
+    background-image: url("assets/fundo-agro-sustentável.jpeg");
+    background-position: center;
+    background-size: cover;
+}
+
+.hero-overlay {
+    position: absolute;
+    inset: 0;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(5, 28, 17, 0.95),
+            rgba(5, 28, 17, 0.65),
+            rgba(5, 28, 17, 0.25)
+        );
+}
+
+.hero-content {
+    position: relative;
+
+    max-width: 780px;
+
+    color: white;
+}
+
+.mini-title {
+    color: var(--lima);
+
+    font-size: 0.72rem;
+
+    font-weight: 900;
+
+    letter-spacing: 0.16em;
+}
+
+.hero h1 {
+    margin: 20px 0;
+
+    font-size: clamp(3.2rem, 7vw, 6.5rem);
+
+    line-height: 0.96;
+
+    letter-spacing: -0.05em;
+}
+
+.hero h1 span {
+    display: block;
+
+    color: var(--lima);
+}
+
+.hero-text {
+    max-width: 650px;
+
+    font-size: 1.1rem;
+
+    color: #e8f0eb;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 12px;
+
+    margin-top: 30px;
+
+    flex-wrap: wrap;
+}
+
+
+/* =========================
+   BOTÕES
+========================= */
+
+.btn {
+    border: none;
+
+    border-radius: 50px;
+
+    padding: 13px 23px;
+
+    font-weight: 900;
+
+    cursor: pointer;
+
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+
+    transition: 0.2s;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+}
+
+.principal {
+    background: var(--lima);
+
+    color: var(--verde);
+}
+
+.secundario {
+    color: white;
+
+    border: 1px solid rgba(255,255,255,0.5);
+}
+
+
+/* =========================
+   SEÇÕES
+========================= */
+
+.section {
+    padding: 100px 7%;
+}
+
+.section-heading {
+    max-width: 800px;
+
+    margin-bottom: 45px;
+}
+
+.section-heading > span {
+    color: var(--verde-claro);
+
+    font-size: 0.72rem;
+
+    font-weight: 900;
+
+    letter-spacing: 0.15em;
+}
+
+.section-heading h2 {
+    margin: 10px 0;
+
+    font-size: clamp(2.2rem, 4.5vw, 4rem);
+
+    line-height: 1.05;
+
+    letter-spacing: -0.04em;
+}
+
+.section-heading strong {
+    color: var(--verde-claro);
+}
+
+.section-heading p {
+    color: var(--cinza);
+}
+
+.centralizado {
+    text-align: center;
+
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/* =========================
+   SOBRE
+========================= */
+
+.sobre {
+    background: var(--fundo);
+}
+
+.sobre-grid {
+    display: grid;
+
+    grid-template-columns: 1.1fr 0.9fr;
+
+    gap: 70px;
+}
+
+.sobre-texto {
+    color: #435047;
+
+    font-size: 1.05rem;
+}
+
+.sobre-texto p {
+    margin-bottom: 18px;
+}
+
+.frase-destaque {
+    display: flex;
+
+    gap: 15px;
+
+    margin-top: 30px;
+
+    padding: 20px;
+
+    border-left: 5px solid var(--verde-claro);
+
+    background: white;
+}
+
+.frase-destaque span {
+    font-size: 1.7rem;
+}
+
+.sobre-numeros {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    border-radius: 20px;
+
+    overflow: hidden;
+
+    background: var(--verde);
+
+    color: white;
+}
+
+.sobre-numeros div {
+    padding: 28px;
+
+    border: 1px solid rgba(255,255,255,0.1);
+}
+
+.sobre-numeros strong {
+    color: var(--lima);
+
+    font-size: 1.5rem;
+}
+
+.sobre-numeros h3 {
+    margin: 8px 0;
+}
+
+.sobre-numeros p {
+    color: #c9d8cf;
+}
+
+
+/* =========================
+   CARDS
+========================= */
+
+.temas {
+    background: white;
+}
+
+.cards {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 22px;
+}
+
+.card {
+    overflow: hidden;
+
+    border: 1px solid var(--linha);
+
+    border-radius: 18px;
+
+    background: white;
+
+    box-shadow: 0 8px 25px rgba(20,50,30,0.06);
+
+    transition: 0.25s;
+}
+
+.card:hover {
+    transform: translateY(-6px);
+
+    box-shadow: 0 18px 45px rgba(20,50,30,0.13);
+}
+
+.card img {
+    height: 220px;
+
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 23px;
+}
+
+.card-content > span {
+    color: var(--verde-claro);
+
+    font-weight: 900;
+}
+
+.card h3 {
+    margin: 7px 0;
+
+    line-height: 1.1;
+
+    font-size: 1.35rem;
+}
+
+.card p {
+    color: var(--cinza);
+
+    font-size: 0.9rem;
+
+    margin-bottom: 15px;
+}
+
+.card button {
+    border: none;
+
+    background: none;
+
+    color: var(--verde-claro);
+
+    font-weight: 900;
+
+    cursor: pointer;
+}
+
+
+/* =========================
+   TECNOLOGIA
+========================= */
+
+.tecnologia {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 70px;
+
+    align-items: center;
+
+    background: var(--fundo);
+}
+
+.tecnologia-imagem img {
+    height: 500px;
+
+    object-fit: cover;
+
+    border-radius: 25px;
+}
+
+.tecnologia-texto > span {
+    color: var(--verde-claro);
+
+    font-size: 0.72rem;
+
+    font-weight: 900;
+
+    letter-spacing: 0.15em;
+}
+
+.tecnologia-texto h2 {
+    margin: 10px 0;
+
+    font-size: clamp(2.2rem, 4vw, 4rem);
+
+    line-height: 1.05;
+}
+
+.tecnologia-texto h2 strong {
+    color: var(--verde-claro);
+}
+
+.tecnologia-texto > p {
+    color: var(--cinza);
+
+    margin-bottom: 20px;
+}
+
+.tecnologias div {
+    display: grid;
+
+    grid-template-columns: 160px 1fr;
+
+    padding: 15px 0;
+
+    border-bottom: 1px solid var(--linha);
+}
+
+.tecnologias span {
+    color: var(--cinza);
+}
+
+
+/* =========================
+   BENEFÍCIOS
+========================= */
+
+.beneficios {
+    background: white;
+}
+
+.beneficios-grid {
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 18px;
+}
+
+.beneficio {
+    padding: 28px;
+
+    background: #f6f8f4;
+
+    border-radius: 17px;
+
+    border: 1px solid var(--linha);
+}
+
+.beneficio span {
+    font-size: 1.8rem;
+}
+
+.beneficio h3 {
+    margin: 8px 0;
+}
+
+.beneficio p {
+    color: var(--cinza);
+
+    font-size: 0.9rem;
+}
+
+
+/* =========================
+   CALCULADORA
+========================= */
+
+.calculadora {
+    display: grid;
+
+    grid-template-columns: 0.8fr 1.2fr;
+
+    gap: 60px;
+
+    background: var(--verde);
+
+    color: white;
+}
+
+.calculadora-intro > span {
+    color: var(--lima);
+
+    font-size: 0.72rem;
+
+    font-weight: 900;
+
+    letter-spacing: 0.15em;
+}
+
+.calculadora-intro h2 {
+    margin: 10px 0;
+
+    font-size: clamp(2.3rem, 4vw, 4rem);
+
+    line-height: 1.05;
+}
+
+.calculadora-intro h2 strong {
+    color: var(--lima);
+}
+
+.calculadora-intro p {
+    color: #cbd8cf;
+}
+
+.calculadora-box {
+    padding: 28px;
+
+    border-radius: 22px;
+
+    background: white;
+
+    color: var(--texto);
+}
+
+.abas {
+    display: flex;
+
+    gap: 8px;
+
+    margin-bottom: 25px;
+
+    padding-bottom: 15px;
+
+    border-bottom: 1px solid var(--linha);
+}
+
+.aba {
+    border: none;
+
+    padding: 10px 15px;
+
+    border-radius: 30px;
+
+    background: #edf2ec;
+
+    color: var(--verde);
+
+    font-weight: 900;
+
+    cursor: pointer;
+}
+
+.aba.ativa {
+    background: var(--verde);
+
+    color: white;
+}
+
+.calculadora-box form {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 16px;
+}
+
+.calculadora-box h3 {
+    grid-column: 1 / -1;
+
+    margin-bottom: 5px;
+}
+
+.calculadora-box label {
+    font-size: 0.84rem;
+
+    font-weight: 800;
+}
+
+.calculadora-box input {
+    display: block;
+
+    width: 100%;
+
+    margin-top: 6px;
+
+    padding: 12px;
+
+    border: 1px solid var(--linha);
+
+    border-radius: 10px;
+
+    outline: none;
+}
+
+.calculadora-box input:focus {
+    border-color: var(--verde-claro);
+}
+
+.calculadora-box form .btn {
+    grid-column: 1 / -1;
+
+    margin-top: 5px;
+}
+
+.escondido {
+    display: none !important;
+}
+
+.resultado {
+    margin-top: 20px;
+
+    padding: 18px;
+
+    border-radius: 13px;
+
+    background: var(--fundo);
+
+    color: #3c4941;
+}
+
+.resultados-grid {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 10px;
+
+    margin-top: 15px;
+}
+
+.resultado-item {
+    padding: 12px;
+
+    border-radius: 10px;
+
+    background: white;
+
+    border: 1px solid var(--linha);
+}
+
+.resultado-item small {
+    display: block;
+
+    color: var(--cinza);
+}
+
+.resultado-item strong {
+    color: var(--verde);
+
+    font-size: 1rem;
+}
+
+
+/* =========================
+   CURIOSIDADES
+========================= */
+
+.curiosidades {
+    background: var(--fundo);
+}
+
+.curiosidade-box {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    gap: 30px;
+
+    padding: 42px;
+
+    border-radius: 25px;
+
+    background: var(--verde);
+
+    color: white;
+}
+
+.curiosidade-box > div > span {
+    color: var(--lima);
+
+    font-size: 0.72rem;
+
+    font-weight: 900;
+
+    letter-spacing: 0.15em;
+}
+
+.curiosidade-box h2 {
+    margin: 8px 0;
+
+    font-size: 2.2rem;
+
+    line-height: 1.1;
+}
+
+.curiosidade-box p {
+    color: #cbd8cf;
+}
+
+.claro {
+    background: white;
+
+    color: var(--verde);
+}
+
+
+/* =========================
+   GLOSSÁRIO
+========================= */
+
+.glossario {
+    background: #f8faf7;
+}
+
+.termos {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 15px;
+}
+
+.termos button {
+    text-align: left;
+
+    padding: 22px;
+
+    border: 1px solid var(--linha);
+
+    border-radius: 15px;
+
+    background: white;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+.termos button:hover {
+    transform: translateY(-3px);
+
+    border-color: var(--verde-claro);
+}
+
+.termos b {
+    display: block;
+
+    font-size: 1.05rem;
+}
+
+.termos span {
+    display: block;
+
+    margin-top: 5px;
+
+    color: var(--cinza);
+
+    font-size: 0.85rem;
+}
+
+
+/* =========================
+   FONTES
+========================= */
+
+.fontes {
+    background: white;
+}
+
+.fontes-lista {
+    display: grid;
+
+    gap: 10px;
+}
+
+.fontes-lista a {
+    display: grid;
+
+    grid-template-columns: 100px 1fr 30px;
+
+    gap: 18px;
+
+    align-items: center;
+
+    padding: 19px;
+
+    border: 1px solid var(--linha);
+
+    border-radius: 14px;
+
+    transition: 0.2s;
+}
+
+.fontes-lista a:hover {
+    border-color: var(--verde-claro);
+
+    transform: translateX(4px);
+}
+
+.fontes-lista > a > strong {
+    color: var(--verde-claro);
+
+    font-size: 0.75rem;
+
+    letter-spacing: 0.1em;
+}
+
+.fontes-lista h3 {
+    font-size: 1rem;
+}
+
+.fontes-lista p {
+    color: var(--cinza);
+
+    font-size: 0.84rem;
+}
+
+
+/* =========================
+   RODAPÉ
+========================= */
+
+footer {
+    padding: 50px 7% 20px;
+
+    display: grid;
+
+    grid-template-columns: 1fr auto;
+
+    gap: 20px;
+
+    background: #0d2819;
+
+    color: #d7e2da;
+}
+
+.footer-logo {
+    font-size: 1.2rem;
+
+    font-weight: 900;
+}
+
+.footer-logo span {
+    color: var(--lima);
+}
+
+footer p {
+    color: #91a699;
+}
+
+.footer-links {
+    display: flex;
+
+    gap: 20px;
+
+    font-size: 0.85rem;
+}
+
+.footer-links a:hover {
+    color: var(--lima);
+}
+
+footer small {
+    grid-column: 1 / -1;
+
+    padding-top: 17px;
+
+    border-top: 1px solid rgba(255,255,255,0.12);
+
+    color: #81968a;
+}
+
+
+/* =========================
+   MODAL
+========================= */
+
+.modal {
+    display: none;
+
+    position: fixed;
+
+    inset: 0;
+
+    z-index: 100;
+
+    align-items: center;
+
+    justify-content: center;
+
+    padding: 20px;
+}
+
+.modal.aberto {
+    display: flex;
+}
+
+.modal-fundo {
+    position: absolute;
+
+    inset: 0;
+
+    background: rgba(5,24,14,0.75);
+
+    backdrop-filter: blur(5px);
+}
+
+.modal-conteudo {
+    position: relative;
+
+    z-index: 2;
+
+    width: 100%;
+
+    max-width: 680px;
+
+    max-height: 85vh;
+
+    overflow-y: auto;
+
+    padding: 38px;
+
+    border-radius: 22px;
+
+    background: white;
+}
+
+.fechar {
+    position: absolute;
+
+    top: 8px;
+    right: 16px;
+
+    border: none;
+
+    background: transparent;
+
+    font-size: 2rem;
+
+    color: var(--cinza);
+
+    cursor: pointer;
+}
+
+#modalCategoria {
+    color: var(--verde-claro);
+
+    font-size: 0.72rem;
+
+    font-weight: 900;
+
+    letter-spacing: 0.15em;
+}
+
+#modalTitulo {
+    margin: 10px 0 15px;
+
+    font-size: 2.2rem;
+
+    line-height: 1.1;
+}
+
+#modalTexto {
+    color: var(--cinza);
+}
+
+#modalTexto p {
+    margin-bottom: 15px;
+}
+
+#modalTexto ul {
+    padding-left: 20px;
+}
+
+
+/* =========================
+   RESPONSIVIDADE
+========================= */
+
+@media (max-width: 1000px) {
+
+    .cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .sobre-grid,
+    .tecnologia,
+    .calculadora {
+        grid-template-columns: 1fr;
+    }
+
+    .beneficios-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+@media (max-width: 760px) {
+
+    .header {
+        padding: 0 6%;
+    }
+
+    .menu-btn {
+        display: block;
+    }
+
+    .header nav {
+        display: none;
+
+        position: absolute;
+
+        top: 72px;
+
+        left: 0;
+        right: 0;
+
+        padding: 20px 7%;
+
+        flex-direction: column;
+
+        background: var(--verde);
+    }
+
+    .header nav.aberto {
+        display: flex;
+    }
+
+    .hero {
+        padding: 110px 7% 70px;
+    }
+
+    .hero h1 {
+        font-size: 3.5rem;
+    }
+
+    .section {
+        padding: 75px 6%;
+    }
+
+    .cards,
+    .termos,
+    .beneficios-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .tecnologia-imagem img {
+        height: 340px;
+    }
+
+    .calculadora-box form {
+        grid-template-columns: 1fr;
+    }
+
+    .resultados-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .curiosidade-box {
+        flex-direction: column;
+
+        align-items: flex-start;
+    }
+
+    .fontes-lista a {
+        grid-template-columns: 1fr 25px;
+    }
+
+    .fontes-lista a > strong {
+        grid-column: 1 / -1;
+    }
+
+    footer {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-links {
+        flex-wrap: wrap;
+    }
+}
